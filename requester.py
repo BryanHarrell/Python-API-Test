@@ -6,4 +6,4 @@ payload = {'format': 'json', 'action': 'query', 'titles': 'Main Page', 'continue
 r = requests.get('http://en.wikipedia.org/w/api.php', params=payload, headers=headers)
 response = r.json()
 #pprint(response)
-print (response['query'])
+pprint (response['query'])
